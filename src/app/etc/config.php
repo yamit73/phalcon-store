@@ -10,7 +10,7 @@ return(
             'host'=>'mysql-server',
             'username'=>'root',
             'password'=>'secret',
-            'dbname'=>'store'
+            'dbname'=>'store2'
         ]
     ]
 );
