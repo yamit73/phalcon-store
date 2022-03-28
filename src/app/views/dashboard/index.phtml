@@ -1,0 +1,11 @@
+<h1>Dashboard</h1>
+<h2>Welcome, <span class="text-success"><?php echo $this->session->name; ?></span></h2>
+<?php
+    echo $this->tag->linkTo(
+        [
+            'login/logout',
+            'Logout!',
+            'class'=>'btn btn-warning'
+        ]
+    );
+    echo '<p class="text-success">date: '.$date.'</p>';

@@ -1,0 +1,211 @@
+<header>
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark navbar-fixed-top">
+  <a class="navbar-brand" href="#">Navbar</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item active">
+        <a class="nav-link" href="">Home</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Contact Us</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link text-success" href="#"><?php echo $this->session->name; ?></a>
+      </li>
+    </ul>
+    <?php
+    if (!isset($this->session->id)) {
+        echo '<a href="login" class="btn btn-outline-primary mx-5" type="submit">Login/Signup</a>';
+    } else {
+        echo '<a href="login/logout" class="text-danger mx-5">Logout</a>';
+    }
+    ?>    
+  </div>
+</nav>
+</header>
+<main>
+  <div class="album py-5 bg-light">
+      <div class="container overflow-hidden">
+        <form class="row row-cols-lg-auto align-items-center mt-0 mb-3">
+            <div class="col-lg-6 col-12">
+              <label class="visually-hidden" for="inlineFormInputGroupUsername">Search</label>
+              <div class="input-group">
+                <input type="text" class="form-control" id="inlineFormInputGroupUsername" placeholder="Product, SKU, Category">
+              </div>
+            </div>
+          
+            <div class="col-lg-3 col-12">
+              <label class="visually-hidden" for="inlineFormSelectPref">Sort By</label>
+              <select class="form-select" id="inlineFormSelectPref">
+                <option selected></option>
+                <option value="">Price:low to high</option>
+                <option value="2">Price:high to low</option>
+                <option value="3">Recently Added</option>
+              </select>
+            </div>
+          
+            <div class="col-lg-3 col-12">
+              <button type="submit" class="btn btn-primary w-100">Search</button>
+            </div>
+          </form>
+      </div>
+    <div class="container">
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
+        
+        <div class="col">
+          <div class="card shadow-sm">
+            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+
+            <div class="card-body">
+                <h5>Fire TV Stick 4K</h5>
+              <p class="card-text">Sample text below</p>
+              <div class="d-flex justify-content-between align-items-center">
+                <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                <button class="btn btn-primary">Add To Cart</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                  <h5>Fire TV Stick 4K</h5>
+                <p class="card-text">Sample text below</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                  <h5>Fire TV Stick 4K</h5>
+                <p class="card-text">Sample text below</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                  <h5>Fire TV Stick 4K</h5>
+                <p class="card-text">Sample text below</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                  <h5>Fire TV Stick 4K</h5>
+                <p class="card-text">Sample text below</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                  <h5>Fire TV Stick 4K</h5>
+                <p class="card-text">Sample text below</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                  <h5>Fire TV Stick 4K</h5>
+                <p class="card-text">Sample text below</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                  <h5>Fire TV Stick 4K</h5>
+                <p class="card-text">Sample text below</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card shadow-sm">
+              <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+  
+              <div class="card-body">
+                  <h5>Fire TV Stick 4K</h5>
+                <p class="card-text">Sample text below</p>
+                <div class="d-flex justify-content-between align-items-center">
+                  <p><strong>$150</strong>&nbsp;<del><small class="link-danger">$180</small></del></p>
+                  <button class="btn btn-primary">Add To Cart</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col">
+            <nav aria-label="Page navigation example">
+                <ul class="pagination">
+                  <li class="page-item"><a class="page-link" href="#">Previous</a></li>
+                  <li class="page-item"><a class="page-link" href="#">1</a></li>
+                  <li class="page-item"><a class="page-link" href="#">2</a></li>
+                  <li class="page-item"><a class="page-link" href="#">3</a></li>
+                  <li class="page-item"><a class="page-link" href="#">Next</a></li>
+                </ul>
+              </nav>
+          </div>
+        
+      </div>
+    </div>
+  </div>
+
+</main>
+
+<footer class="text-muted py-5">
+  <div class="container">
+    <p class="float-end mb-1">
+      <a href="#">Back to top</a>
+    </p>
+    <p class="mb-1">&copy; CEDCOSS Technologies</p>
+  </div>
+</footer>
