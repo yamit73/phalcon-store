@@ -1,21 +1,56 @@
 <!doctype html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <title>Store</title>
     <link rel="stylesheet" href="/assets/node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <style>
-        .login-icon{
+        .login-icon {
             font-size: 80px;
             color: #0B5ED7;
         }
     </style>
 </head>
+
 <body>
-<div class="container-fluid">
-    <?php echo $this->getContent(); ?>
-</div>
-<script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+    <div class="container-fluid">
+        <header>
+            <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+                <a class="navbar-brand text-info mx-3" href="#">Shop</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav mr-auto">
+                        <li class="nav-item active">
+                            <a class="nav-link" href="">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Contact Us</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="/cart">Cart</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-success" href="#"><?php echo $this->session->name; ?></a>
+                        </li>
+                    </ul>
+                    <?php
+                    if (!isset($this->session->id)) {
+                        echo '<a href="login" class="btn btn-outline-primary mx-5" type="submit">Login/Signup</a>';
+                    } else {
+                        echo '<a href="login/logout" class="text-danger mx-5">Logout</a>';
+                    }
+                    ?>
+                </div>
+            </nav>
+        </header>
+        <?php echo $this->getContent(); ?>
+    </div>
+    <script src="/assets/node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
 </body>
+
 </html>
